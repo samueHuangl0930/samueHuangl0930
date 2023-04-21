@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.all{
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    table-layout : fixed;  
+    position:fixed; top:0;
+    width: 100%;
+    height: 5%;
+    color:white;
+    z-index: 3;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+}
+header li{
+    list-style: none;
+    padding: 15px 20px;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+}
+nav li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: 	#ADADAD;
+    text-decoration: none;
+}
+.conversation{
+    width: 100%;
+    height: 100%;
+    margin-top: 2.4%;
+}
+.orange{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.orange img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+.orangetext{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    text-align: center;
+}
+.orangetext h2{
+    color: white;
+    margin: 5px;
+}
+.crgall{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.crg{
+    position: relative;
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.crgtext{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 10%;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+.crg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    right: 0%;
+}
+.crg h2{
+    color: white;
+    margin: 5px;
+}
+.network{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.network img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+.networktext{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 10%;
+    position: absolute;
+    margin-top: 5%;
+    z-index: 2;
+    text-align: center;
+}
+.gogoroall{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.gogoro{
+    position: relative;
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: center;
+}
+.gogorotext{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 10%;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+.gogoro img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    right: 0%;
+}
+
+.systemall{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.systemleft{
+    position: relative;
+    width: 42%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.systemright{
+    position: relative;
+    width: 57%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.systemtext{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 10%;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+}
+.systemall img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    right: 0%;
+}
+.hop{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.hop img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+.hoptext{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 15%;
+    position: absolute;
+    margin-left: 5%;
+    z-index: 2;
+    text-align: left;
+}
+
+.circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+.circletext{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 15%;
+    position: absolute;
+    margin-left: 20%;
+    z-index: 2;
+    text-align: left;
+}
+
+.we{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weimg{
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+    margin-top: 3%;
+    bottom: 0;
+}
+.we img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wetext{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    height: 20%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.ftop{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.first{
+    height: 100%;
+    width: 33%;
+    padding: 20px;
+}
+.second{
+    height: 100%;
+    width: 33%;
+    padding: 20px;
+}
+.third{
+    height: 100%;
+    width: 34%;
+    padding: 20px;
+}
+.center{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    width: 100%;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer h3{
+    font-size: 20px;
+    padding: 5px 5px 10px 5px;
+}
+.center h3:hover{
+    cursor: pointer;
+
+}
+.text{
+    padding: 50px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.text li{
+    font-size:10px ;
+    color: #737d82;
+}
+.grey{
+    width: 100%;
+    height: 100%;
+    background-color: #323237;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.greyall{
+    width: 80%;
+    height: 50%;
+    background-color: #323237;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+p{
+    color: #9D9D9D;
+    font-size: 20px;
+    margin: 20px 10px 10px 10px;
+    text-decoration: none;
+}
+.grey ul{
+    list-style-type: none;
+    margin: 20px 50px 50px 50px;
+    color: white;
+}
+.grey li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: 	#b9bcbf;
+}
+span{
+    display: flex;
+    justify-content: center;
+    color: #9D9D9D;
+    font-size: 20px;
+    text-align: left;
+}
+.one {
+    height: 800px;
+}
+.lest{
+    height: 10%;
+    width: 50%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+.lest span{
+    font-size: 5px;
+    display: flex;
+    justify-content: left;
+}
+.grey h4{
+    color: #737d82;
+}
+a{
+    padding: 0 5px;
+}

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+}
+.wrapper{
+    height: 100%;
+
+}
+.head{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+.content{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+.content-left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 1px;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    padding: 5px 20px 5px 20px;
+    height: 60%;
+}
+.account {
+    margin: 10px;
+}
+.password {
+    margin: 10px;
+}
+.button {
+    padding: 5px;
+}
+.txt {
+    color: rgb(197, 193, 193);
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 15px 0;
+}
+.forget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center1{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    padding: 5px 20px 5px 20px;
+    margin-top: 10px;
+    width: 262px;
+}
+.p {
+    font-size: 18px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.span{
+    color: rgb(46, 153, 202);
+    font-weight: bold;
+}
+.footer{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+

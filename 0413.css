@@ -1,0 +1,35 @@
+*{
+    font-family:'Microsoft JhengHei';
+    padding:0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.box1{
+    border: red solid 6px;
+    background-color: rebeccapurple;
+    height: 10%;
+    width: 10%;
+}
+.box2{
+    border: rgb(234, 255, 0) solid 6px;
+    background-color: rgb(51, 54, 153);
+    height: 10%;
+    width: 10%;
+}
+.box3{
+    border: rgb(255, 0, 247) solid 6px;
+    background-color: rgb(51, 153, 75);
+    height: 10%;
+    width: 10%;
+    display: flex;
+    
+}

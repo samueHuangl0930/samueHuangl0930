@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.all{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head{
+    width: 55%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background:rgba(0, 0, 0, .8);
+}
+span{
+    padding: 0 20px 0 0;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.picture{
+    width: 55%;
+   height: 45%;
+
+}
+
+.chef{
+    width: 55%;
+    height: 60%;
+    background-color: #efe9e7;
+    display: flex;
+    flex-direction: row;
+}
+.r{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bottom p{
+    color: saddlebrown;
+}
+.l{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bottom{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listen{
+    width: 55%;
+    height: 35%;
+    background-color: #3D1101;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+h3{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 24px;
+}
+ul{
+    list-style: none;
+    margin-left: 3%;
+    color: white;
+}
+li{
+    max-width: 31.33333%;
+    float: left;
+    margin-right: 1%;
+    padding-bottom: 50px;
+}
+ul p{
+    margin-left: 100px;
+}
+ul span{
+    margin-left: 200px;
+}
+.reserve{
+    width: 55%;
+    height: 60%;
+    background-color:#efe9e7 ;
+    display: flex;
+    flex-direction: column;
+}
+.map{
+    display: flex;
+    flex-direction: row;
+}
+form{
+    margin: 100px;
+}
+input{
+    width: 100%;
+    padding: 5px 300px 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

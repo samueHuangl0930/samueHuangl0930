@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+#sidebar{
+    width: 15%;
+    height: 100%;
+    overflow-y: auto;
+}
+.wrapper{
+    width: 85%;
+    height: 100%;
+    overflow-y: auto;
+}
+header{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.search{
+    width: 30%;
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search-bar{
+    width: 90%;
+    height: 40PX;
+}
+.search button{
+    height: 40px;
+    width: 50px;
+    padding: 10px;
+}
+::placeholder{
+    font-size: 20px;
+}
+.search img{
+    width: 100%;
+    height: 100%;
+}
+.choose{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choose ul{
+    display: flex;
+    flex-direction: row;
+}
+.choose button{
+    list-style: none;
+    background-color:#D0D0D0;
+    border-radius: 40px;
+    border: 0px;
+    width: auto;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+.choose li:hover{
+    cursor: pointer;
+}
+.choose button:focus{
+    background-color: black;
+    color: white;
+}
+.first{
+    width: 100%;
+    height: 35%;
+}
+.premium{
+    width: 100%;
+    height: 25%;
+    padding: 2%;
+}
+.premium:hover{
+    cursor: pointer;
+}
+.premium img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.second{
+    width: 100%;
+    height:25%;
+    padding: 2% 1%;
+}
+.third{
+    width: 100%;
+    height: 5%;
+    padding: 2% 1%;
+}
+.fourth{
+    width: 100%;
+    height: 15%;
+    padding: 2% 1%;
+}
+.fifth{
+    width: 100%;
+    height: 15%;
+    padding: 2% 1%;
+}
+.sixth{
+    width: 100%;
+    height: 20%;
+    padding: 2% 1%;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
+.one{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5%;
+}
+.two{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5%;
+}
+.sixth p{
+    margin: 3px;
+    font-size: 2px;
+}
+.sixth p:hover{
+    cursor: pointer;
+}
+.main{
+    width: 100%;
+    height: 75%;
+}
+.main ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.main li{
+    height: 1000px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    cursor: pointer;
+}
+.main li:hover{
+    background-color:#D0D0D0;
+}
+.film{
+    height: 90%;
+    width: 100%;
+    background-color: 	#E0E0E0;
+}

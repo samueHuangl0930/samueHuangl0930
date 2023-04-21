@@ -1,0 +1,42 @@
+.content-in h2{
+    color:slateblue;
+}
+.content-in:nth-child(1) h2{
+    color:green
+}
+.content-in span{
+    color:red;
+    font: size 1.5em;
+    text-decoration: underline;
+}
+.content-in:nth-child(4) p{
+    color: blue;
+}
+.content-in:nth-child(3){
+    background-color: #ffa;
+}
+.content:nth-child(2) .content-in:nth-child(2){
+    background-color: #faa;
+}
+.content-in h2:hover{
+    text-decoration:underline;
+}
+.content-in:nth-child(1) img:hover{
+    cursor: zoom-in;
+}
+.content-in:nth-child(2) img:hover{
+    cursor: zoom-out;
+}
+.content-in:nth-child(3) img:hover{
+    cursor: pointer;
+}
+.content-in:nth-child(4) img:hover{
+    cursor: no-drop;
+}
+.content:nth-child(2) .content-in:nth-child(1) img:hover{
+    filter: opacity(0.5);
+}
+
+
+
+

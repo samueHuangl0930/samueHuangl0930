@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+td{
+    height:100px;
+    width:100px;
+}
+#background{
+    background-color:#4DFFFF
+}
+#leftUp{
+    background-color:#FFE4E1;
+}
+#upCenter{
+    background-color:#FFE4C4;
+}
+#rightUp{
+    background-color:#FFE4B5;
+}
+#centerLeft{
+    background-color:#FFE1FF;
+}
+#center{
+    background-color:#FFDEAD;
+}
+#centerRight{
+    background-color:#FFDAB9;
+}
+#leftDown{
+    background-color:#FFD700;
+}
+#downCenter{
+    background-color:#FFD39B;
+}
+#rightDown{
+    background-color:#FFC1C1;
+}
+.aa{
+    display: flex;
+   align-items: center;
+    justify-content: center;
+}

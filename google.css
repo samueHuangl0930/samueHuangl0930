@@ -1,0 +1,125 @@
+.header{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover
+{text-decoration:underline;}
+
+.link{
+    display: inline-block;
+    padding: 0 5px;
+    margin: 0 5px;
+    color: #202124;
+    font-size: 14px;
+}
+a.link:first-of-type {/*選取第一個*/
+    margin-left: 15px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    padding:0 6px;
+    justify-self:flex-end;
+    margin-left: auto;
+}
+
+.rightlink-a{
+    display: inline-block;
+    color: rgba(0,0,0,0.87);
+    padding: 0 3px;
+    margin: 0 5px;
+    font-size: 12px;
+}
+.Jiugongge{
+    display: inline-block;
+    padding: 0 20px;
+}
+.Avatar{
+    display: inline-block;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.text { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -150px;
+}
+.text input{ 
+    border-radius: 100px;
+    box-shadow:3px 3px 5px 6px #cccccc;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    width: 400px;
+    padding: 5px;
+}
+
+.logo-img{
+    padding: 200px;
+}
+.button{
+    text-align:center;
+}
+.Button1{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+}
+.Button2{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;;
+    height: 36px;
+    
+}
+.floor{
+    background: #f2f2f2;
+}
+.Taiwan{
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+    
+}
+.end{
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #70757a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;/*將空白空間分配在東西之間*/
+}
+.end-a{
+    display: inline-block;
+    padding: 0 5px;
+    margin: 0 5px;
+    color: #70757a;
+    font-size: 14px;
+}
+.blank {
+    height: 255px;
+}

@@ -1,0 +1,105 @@
+*{
+    padding:0;
+    margin: 0;
+}
+html{
+    background-color: beige;
+    font-family: Microsoft JhengHei;
+}
+#wrapper{
+    margin: 0 auto;
+    width: 1024px;
+    max-width: 1024px;
+}
+#logo{
+    width: 100%;
+    height: 250px;
+}
+#banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+nav{
+    background-color: #B63D32;
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    padding: 15px 20px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    color: #ffc90e;
+}
+#content{
+    background-color: #F4F4ED;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+#siderbar{
+    background-color: #FFE634;
+    width: 250px;
+    height: 370px;
+    display: flex;
+    align-items: stretch;
+    padding: 15px 15px;
+}
+#siderbar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+#siderbar ul li{
+    display: flex;
+    width: 130px;
+    height: 40px;
+    background-color: #B63D32;
+    text-decoration: none;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+}
+#siderbar ul li a{
+    color: black;
+}
+#content_in{
+    text-align: left;
+    padding: 30px 50px;
+    overflow-y: auto;
+}
+#content_in h1{
+    color: #B63D32;
+    margin-bottom: 20px;
+}
+#content_in p{
+    margin-bottom: 20px;
+}
+#content_in a{
+    display: block;
+    width: 130px;
+    height: 40px;
+    background-color: #B63D32;
+    text-decoration: none;
+    line-height: 40px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+footer{
+    background-color: #71552A;
+    color: #FFFFFF;
+    text-align: center;
+}
+footer p{
+    padding: 10px 0;
+    font-size: 10px;
+}
