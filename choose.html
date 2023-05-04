@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      body > div {
+        width: 200px;
+        height: 200px;
+        border: black solid 2px;
+      }
+      /*scope */
+      .scope div {
+        color: red;
+      }
+      /*inherit */
+
+      .inherit span {
+        color: blue;
+      }
+      /*priority */
+
+      .priority div#sp {
+        color: green;
+      }
+      .priority div {
+        color: yellow;
+      }
+      .priority span > div {
+        color: blue;
+      }
+      .priority div {
+        color: red;
+      }
+      /* 後代選擇器 */
+
+      .offspring .item {
+        background: red;
+        color: yellow;
+      }
+      /* 子階 */
+
+      .children > .item {
+        background: red;
+        color: yellow;
+      }
+      /* 嚴謹 */
+      .rigorous .x-item + .y-item {
+        color: red;
+        font-size: 30px;
+      }
+      /* 寬鬆 */
+      .loose .x-item ~ .y-item {
+        color: red;
+        font-size: 30px;
+      }
+      /*nth-child-1 */
+      .nth-child-1 ul li:nth-child(3) {
+        background: red;
+        color: yellow;
+      }
+      /*nth-child-2 */
+      .nth-child-2 {
+        background-color: burlywood;
+        width: 600px;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+      }
+      .nth-child-2 ul {
+        margin: 25px;
+      }
+      .nth-child-2 ul.n2 li:nth-child(2n) {
+        width: 100px;
+        background: red;
+        color: yellow;
+      }
+
+      .nth-child-2 ul.n2_1 li:nth-child(2n + 1) {
+        width: 100px;
+        background: red;
+        color: yellow;
+      }
+
+      .nth-child-2 ul.n3 li:nth-child(3n) {
+        width: 100px;
+        background: red;
+        color: yellow;
+      }
+      /* first */
+      .first ul li:first-child {
+        background: red;
+        color: yellow;
+      }
+      /* last */
+      .last ul li:last-child {
+        background: red;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scope">
+      <h1>範圍 scope</h1>
+      <div>一號</div>
+      <span>二號</span>
+      <span>
+        <div>三號</div>
+      </span>
+    </div>
+    <div class="inherit">
+      <h1>繼承 inherit</h1>
+      <div>一號</div>
+      <span>二號</span>
+      <span>
+        <div>三號</div>
+      </span>
+    </div>
+    <div class="priority">
+      <h1>權重 priority</h1>
+      <div>一號</div>
+      <span>
+        <div>二號</div>
+      </span>
+      <span>
+        <div id="sp">三號</div>
+      </span>
+    </div>
+    <div class="offspring">
+      <h1>後代選擇器</h1>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div>
+        <div class="item">3</div>
+      </div>
+    </div>
+    <div class="children">
+      <h1>子階 ></h1>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div>
+        <div class="item">3</div>
+      </div>
+    </div>
+    <div class="rigorous">
+      <h1>嚴謹相鄰 +</h1>
+      <div class="x-item">X</div>
+      <div class="y-item">Y</div>
+      <div class="y-item">Y</div>
+      <div class="y-item">Y</div>
+    </div>
+    <div class="loose">
+      <h1>寬鬆相鄰 ~</h1>
+      <div class="x-item">X</div>
+      <div class="y-item">Y</div>
+      <div class="y-item">Y</div>
+      <div class="y-item">Y</div>
+    </div>
+    <div class="nth-child-1">
+      <h1>子層指定 :nth-child(n)</h1>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="nth-child-2">
+      <ul class="n2">
+        <h1>2n</h1>
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>10</li>
+      </ul>
+
+      <ul class="n2_1">
+        <h1>2n+1</h1>
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>10</li>
+      </ul>
+
+      <ul class="n3">
+        <h1>3n</h1>
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>10</li>
+      </ul>
+    </div>
+    <div class="first">
+      <h1>first-child</h1>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="last">
+      <h1>last-child</h1>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+  </body>
+</html>
